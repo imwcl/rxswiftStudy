@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginView" customModule="rxswift_login" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mQd-TM-b7Q">
+                    <rect key="frame" x="40" y="105" width="295" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v8G-2R-FkJ">
+                    <rect key="frame" x="40" y="177" width="295" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ig-nP-Kc2">
+                    <rect key="frame" x="170" y="258" width="34" height="30"/>
+                    <state key="normal" title="login">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMU-3H-GeL">
+                    <rect key="frame" x="40" y="147" width="295" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.16078431369999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="478-si-nmR">
+                    <rect key="frame" x="40" y="223" width="295" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.16078431369999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="IgQ-fv-AlT">
+                    <rect key="frame" x="177" y="263" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="478-si-nmR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="24B-pD-WN5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mQd-TM-b7Q" secondAttribute="trailing" constant="40" id="FbB-Z7-QeI"/>
+                <constraint firstItem="6ig-nP-Kc2" firstAttribute="top" secondItem="v8G-2R-FkJ" secondAttribute="bottom" constant="51" id="G1o-V4-Cm5"/>
+                <constraint firstItem="v8G-2R-FkJ" firstAttribute="top" secondItem="mQd-TM-b7Q" secondAttribute="bottom" constant="42" id="Lys-2M-SR0"/>
+                <constraint firstItem="WMU-3H-GeL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Npn-qY-sla"/>
+                <constraint firstItem="IgQ-fv-AlT" firstAttribute="centerX" secondItem="6ig-nP-Kc2" secondAttribute="centerX" id="Okj-Qd-n55"/>
+                <constraint firstItem="v8G-2R-FkJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="PZO-mb-fqe"/>
+                <constraint firstItem="mQd-TM-b7Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="85" id="S6f-dU-pRG"/>
+                <constraint firstItem="478-si-nmR" firstAttribute="top" secondItem="v8G-2R-FkJ" secondAttribute="bottom" constant="16" id="XMy-EB-5vD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="478-si-nmR" secondAttribute="trailing" constant="40" id="fgs-i7-ziR"/>
+                <constraint firstItem="mQd-TM-b7Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="fxy-UT-piM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WMU-3H-GeL" secondAttribute="trailing" constant="40" id="kLh-xH-EAk"/>
+                <constraint firstItem="IgQ-fv-AlT" firstAttribute="centerY" secondItem="6ig-nP-Kc2" secondAttribute="centerY" id="lXe-Sb-Oxi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="v8G-2R-FkJ" secondAttribute="trailing" constant="40" id="s7l-2I-xde"/>
+                <constraint firstItem="6ig-nP-Kc2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wk8-dc-psE"/>
+                <constraint firstItem="WMU-3H-GeL" firstAttribute="top" secondItem="mQd-TM-b7Q" secondAttribute="bottom" constant="12" id="xjV-Hb-9fB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="loading" destination="IgQ-fv-AlT" id="uu6-fN-LTu"/>
+                <outlet property="loginBtn" destination="6ig-nP-Kc2" id="2fH-R5-tsu"/>
+                <outlet property="password" destination="v8G-2R-FkJ" id="1Y4-pc-LgK"/>
+                <outlet property="psTips" destination="478-si-nmR" id="tGv-7r-IhT"/>
+                <outlet property="tips" destination="WMU-3H-GeL" id="HA8-5e-ibe"/>
+                <outlet property="username" destination="mQd-TM-b7Q" id="Ogc-Da-mdD"/>
+            </connections>
+        </view>
+    </objects>
+</document>
